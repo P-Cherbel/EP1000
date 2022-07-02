@@ -5,23 +5,42 @@ body{
 a{
     text-decoration: none;
     color: goldenrod;
-    background-color: orange;
+
+
+}
+
+p{ 
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:medium;
 }
 
 h1{ 
-    margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    font-family: monospace;
+    font-size: x-large;
 }
+h2{ 
+    margin: 10;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+h3{ 
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
 
 #container {
     background-color: white;
-    width: 800px;
+    width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #header {
-    background-color: #66CCFF;
+    background-color: rgb(50, 61, 85);
     color: white;
     text-align: center;
     padding: 10px;
@@ -33,12 +52,12 @@ h1{
 }
 
 #nav {
-    width: 180px;
+    width: 235px;
     float: left;
 }
 
 #main {
-    width: 600px;
+    width: 788px;
     float: right;
 }
 
@@ -48,12 +67,12 @@ h1{
 
 }
 
-#nav .selected
+
 
 #footer {
     clear: both;
-    padding: 10px;
+    
     background-color: azure;
-    color: white;\
+    
     text-align: right;
 }
