@@ -18,17 +18,18 @@ p{
 h1{ 
     margin: auto;
     font-family: monospace;
-    font-size: x-large;
+    font-size: xx-large;
 }
 h2{ 
     margin: 10;
     font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+    font-size: x-large;
 }
 h3{ 
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
+    color: rgb(102, 93, 93);
 }
 
 

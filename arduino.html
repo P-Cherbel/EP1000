@@ -74,7 +74,7 @@
         <li>An arduino board</li>
         <li>A breadboard</li>
         <li> 3 LED lights </li>
-        <li> 3 220Ohm resistors </li>
+        <li> 3 220 Ohm resistors </li>
     </ul>
       <img src="Pictures/3f_components.png" width="600px"/>    
         <h3>Set up the connections</h3>
@@ -85,10 +85,14 @@
 
       <h3>Code!</h3>
       <p>Firstly, define animationSpeed and brightness. Then in voidsetup, make the pins 9, 10 and 11 outputs.    </p>
+      <img src="Pictures/3f_setupcode.png" width="600px"/> 
       <p>Next for the voidloop, set the animationSpeed to 3.</p>
       <p>To make the LEDs fades in write the command "for (Brightness = 0; Brightness <= 255; Brightness += 1)" (255 to 0 for fading out) and since fading is analog, write"
         analogWrite(11, Brightness)". </p>
         <p> Since I wanted to have the lights "chase" each other, I added a line to turn off pin 9 after fading out of pin 11, off 11 after 10 and 10 after 9.</p>
+        <p>Here is the code:</p> 
+        <iframe width="725" height="453" src="Arduino code for “chasing lights”.pdf" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        
       
 
        
