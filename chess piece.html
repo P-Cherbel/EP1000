@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Piece</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+     <div id="header">
+      <h1 >My Projects</h1>
+      <h2>Chess Knight</h2>
+      <p>3D Printing a Chess Knight.</p>
+        </div>
+
+
+    <div id="content">
+
+      <div id="nav">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a class="selected" href="index.html">Who am I?</a></li>
+          <li> <a href= "Project.html"> Projects</a></li>
+          <li> <a href="Finalproject.html">Final Project</a> </li>
+      </ul>
+      </div>
+
+      <div id="main">
+        <a href= "Project.html"> Return</a> 
+
+        <h2>Chess Knight</h2>
+        <p >Using Fusion 360, I designed and 3D Printed a chess knight.</p> 
+       
+        <p>Here is the design in Fusion 360.</p>       
+        <iframe src="https://ichat2243.autodesk360.com/shares/public/SH35dfcQT936092f0e43bf590821e3a41cf4?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        <h2>Design Steps:</h2>
+     
+        <h3>Create a column.</h3> 
+      <p>To start off, I drew a circle and extruded it to the height of the chess piece.</p>
+      <img src="Pictures/1CK.png" width="600px"/>    
+        <h3>Split the head, body and base.</h3>
+      <p>To split the column into 3, I drew 2 rectangles  and used a side of the rectangles as a means to split the boy into 3.</p>
+      <img src="Pictures/2CK.png" width="600px"/> 
+
+      <h3>Define the base</h3>
+      <p>I used the fillet function to define the base and seperate it from the body.  </p>
+      <img src="Pictures/3CK.png" width="600px"/> 
+      
+      <h3>Draw a rough sketch</h3>
+      <p>Select the vertical plane and draw a rough sketch of the knight. This will be used as a guide.</p>
+      <img src="Pictures/4CK.png" width="600px"/> 
+      
+      <h3>Shape the column</h3>
+      <p> Use the sketch to split the top of the column to draw the shape of the mane and extrude the sections outside of the column.</p>
+      <img src="Pictures/5CK.png" width="600px"/> 
+      
+      <h3>Head and neck</h3>
+      <p>I wanted the neck and the head to have varying thickness so I split them and extruded (using the cut function) them give them shape.   </p>
+      <img src="Pictures/6CK.png" width="600px"/> 
+
+      <h3>Mane</h3>
+      <p>Extrude the mane using the settings bellow:</p>
+      <img src="Pictures/7CK.png" width="600px"/> 
+
+      <h3>Finally fillet</h3>
+      <p>I used the fillet function to shape the:
+        <ul>
+            <li>Head</li>
+            <img src="Pictures/8.1CK.png" width="300px"/> 
+            <li>Head and neck connection </li>
+            <img src="Pictures/8.2CK.png" width="300px"/> 
+            <li>and Body </li>
+            <img src="Pictures/8.3CK.png" width="300px"/> 
+        </ul>
+      </p>
+
+      <h3>Mane indents</h3>
+      <p>Most chess knights have a shape in their mane so I extruded (cut) that section as the final step of the design process.</p>
+      <img src="Pictures/9CK.png" width="600px"/>  
+   
+        <h2>Printing Steps:</h2>
+      <h3>Download the design</h3> 
+      <p>The design has to be downloaded as an stl file.</p>
+      <p>To do this right click the Document settings and click "save as mesh". Make sure that the file type is stl and only the bodies you do not want to print are hidden.</p>
+      <img src="Pictures/0.5CK.png" width="300px"/>
+      <P>It should look something like this:</P> 
+      <img src="Pictures/0.6CK.png" width="600px"/>
+        
+        <h3>Set up Cura</h3>
+      <p>This depends on the 3D Printer that you are using. The 3D printer I used was 3DP-Prusa-MS.</p>
+      <p>This design has overhangs and so require supports. Here are the settings I used:</p>
+      <img src="Pictures/Chess_cura.png" width="600px"/>  
+
+      <h3>Print!</h3>
+      <p>After printing, the chess piece will have supports. </p> 
+      <img src="Pictures/CK1.jpg" width="600px"/>  
+      <p>Cut out the supports. I found a screwdriver with a very small size was very useful. Here is the final product:</p>
+      <img src="Pictures/CK2.jpg" width="600px"/>  
+        
+      <h2>Tip</h2>
+      <p>Use a reference and do not be afraid to back track in case you use the "fillet" function too many times. The bottom row of the fusion 360 is very useful to make sure you are on the right track.</p>
+
+
+      </div>   
+    </div>
+
+    <div id="footer">
+      <h1>Contact</h1>
+      <p>You can contact me at:</p>
+      <p>chyrvelgwyn.20@ichat.sp.edu.sg</p>
+      </div>
+
+    </div>
+</body>
+</html>

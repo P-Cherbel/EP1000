@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Box</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+     <div id="header">
+      <h1 >My Projects</h1>
+      <h2>Music Box</h2>
+      <p>Use laser cutting to make a Music Box.</p>
+        </div>
+
+
+    <div id="content">
+
+      <div id="nav">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a class="selected" href="index.html">Who am I?</a></li>
+          <li> <a href= "Project.html"> Projects</a></li>
+          <li> <a href="Finalproject.html">Final Project</a> </li>
+      </ul>
+      </div>
+
+      <div id="main">
+        <a href= "Project.html"> Return</a>
+        
+        <h2>Music box </h2>
+        <p >Using Fusion 360, I designed and laser cut a music box.</p> 
+       
+        <p>Here is the design in Fusion 360.</p>       
+        <iframe src="https://ichat2243.autodesk360.com/shares/public/SH35dfcQT936092f0e43bf590821e3a41cf4?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        <h2>Design Steps:</h2>
+     
+        <h3>Draw 3 of the sides.</h3> 
+      <p>The parameters used are:</p>
+      <img src="Pictures/MB1.png" width="600px"/> 
+      <p>Draw out a rectangle according to the parameters. Draw an offset by adding rectangles as width/5 by thickness. Use the rectangle pattern function to draw the slots in the offset.</p>
+      <img src="Pictures/MB1.1.png" width="600px"/>   
+      <p>Mirror the lines on the other side of the rectangle.</p>
+      <img src="Pictures/MB1.2.png" width="600px"/>   
+      <p>Repeat this for the other side and the rest of the 3 sides on the origin.</p>
+      <img src="Pictures/MB1.3.png" width="600px"/>   
+
+        <h3>Extrude the sides</h3>
+      <p>Select the rectangle and alterating slots.</p>
+      <img src="Pictures/MB2.1.png" width="600px"/> 
+      <p>Ensure the extrsion is below the drawing.</p>
+      <img src="Pictures/MB2.2.png" width="600px"/> 
+      <p>Repeat the extrusion with the offset of the parameter (width or length or height) to get the other side.</p>
+      <img src="Pictures/MB2.3.png" width="600px"/>
+      <p>Do this multiple times to get the other sides.</p>
+      <img src="Pictures/MB2.4.png" width="600px"/>
+      <p>You should get a box like this.</p>
+      <img src="Pictures/MB2.5.png" width="600px"/>
+
+      <h3>Opening Mechanism</h3>
+      <p>I used a knife hinge</p>
+      <p>The first step is to cut out this shape from the front side.</p>
+      <img src="Pictures/MB3.1.png" width="600px"/> 
+      <p>A rectangular rectangle was extruded on the front panel. Make sure this is a "new body".</p>
+      <img src="Pictures/MB3.2.png" width="600px"/> 
+      <p>The mechanism should look like this: two circles- one to fit in the knotch on the front side and another to stop it from slipping- and one suare pege to hold them all together. Make sure they are all "new body".</p>
+      <img src="Pictures/MB3.3.png" width="600px"/> 
+      Here it is with the front panel:
+      <img src="Pictures/MB3.4.png" width="600px"/> 
+
+      <h3>Hole for crank</h3>
+      <p>Measure the size of the mechenism and draw the circle.</p>
+      <p>Extrude the circle and extrude(cut) in the side.</p>
+      <img src="Pictures/MB3.5.png" width="600px"/> 
+      
+      <h3>Save dxf files</h3>
+      <p> Select sides and create sketches from them. To save these are dxf files, select each sketch and right click them and click "save as dxf".</p>
+      
+      
+      <h3>Laser Cut</h3>
+      <p>Send these dxf files to the laser cutter. Place them together into one page to save materials and cut.</p>
+      <img src="Pictures/MB4.png" width="600px"/> 
+
+      <h3>Put it together</h3>
+      <p>Hot glue the musical mechanism to the bottom and assemble the box.</p>
+      <img src="Pictures/MB5.png" width="600px"/> 
+
+      <h2>Tip</h2>
+      <p>Make sure the initial sketches are on the origin so that when the parameters are changed (namely thickness), they are changed professional. </p>
+
+
+      </div>   
+    </div>
+
+    <div id="footer">
+      <h1>Contact</h1>
+      <p>You can contact me at:</p>
+      <p>chyrvelgwyn.20@ichat.sp.edu.sg</p>
+      </div>
+
+    </div>
+</body>
+</html>

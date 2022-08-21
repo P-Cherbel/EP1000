@@ -46,7 +46,7 @@ p{
 }
 
 #header {
-    background-color: rgb(50, 61, 85);
+    background-color: rgba(39, 88, 192, 0.705);
     color: white;
     text-align: center;
     padding: 10px;
@@ -81,4 +81,6 @@ p{
     background-color: azure;
     
     text-align: right;
+
+    padding: 10px;
 }

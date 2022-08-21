@@ -28,6 +28,8 @@
       </div>
 
       <div id="main">
+        <a href= "Project.html"> Return</a>
+        
         <h2> 3 Running lights</h2>
         <p >One of the arduino assignments was to create a board with 3 lights</p> 
        
@@ -51,12 +53,15 @@
       <img src="Pictures/3f_circuit.png" width="600px"/> 
 
       <h3>Code!</h3>
-      <p>Firstly, define animationSpeed and brightness. Then in voidsetup, make the pins 9, 10 and 11 outputs.    </p>
+      <p>Firstly, define i, j, animationSpeed and brightness. Then, in voidsetup make the pins 9, 10 and 11 outputs.    </p>
+      <img src="Pictures/3f_setupcode.png" width="600px"/> 
       <p>Next for the voidloop, set the animationSpeed to 3.</p>
-      <p>To make the LEDs fades in write the command "for (Brightness = 0; Brightness <= 255; Brightness += 1)" (255 to 0 for fading out) and since fading is analog, write"
+      <p>To make the LEDs fade in write the command "for (Brightness = 0; Brightness <= 255; Brightness += 1)" (255 to 0 for fading out) and since fading is analog, write"
         analogWrite(11, Brightness)". </p>
         <p> Since I wanted to have the lights "chase" each other, I added a line to turn off pin 9 after fading out of pin 11, off 11 after 10 and 10 after 9.</p>
-               
+        <p>Here is the code:</p> 
+        <iframe width="725" height="453" src="Arduino code for “chasing lights”.pdf" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+         
       <h2>Tip</h2>
       <p>Copy paste the lines for each pin to minimise any errors since you check the same code 3 times.</p>
 
@@ -64,7 +69,7 @@
       <h2> Light with button</h2>
         <p >The second arduino assignment was to create a light with a button</p> 
        
-        <p>The lights in my simulation are "chasing" each other, fading in and out.</p>       
+        <p>The lights in my simulation are "chasing" each other, fading in and out if the button was on but if the button was not pressed, all of the buttons are on.</p>       
         <iframe width="725" height="453" src="https://www.tinkercad.com/embed/czGlYTl8M7x?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
         
         <h2>Steps:</h2>
@@ -73,29 +78,29 @@
       <ul>
         <li>An arduino board</li>
         <li>A breadboard</li>
-        <li> 3 LED lights </li>
-        <li> 3 220 Ohm resistors </li>
+        <li>6 LED lights </li>
+        <li>7 220 Ohm resistors </li>
+        <li>A button </li>
     </ul>
-      <img src="Pictures/3f_components.png" width="600px"/>    
+      <img src="Pictures/3g_components.png" width="600px"/>    
         <h3>Set up the connections</h3>
       <p>Connect the breadboard to the arduino board by connecting the 5V pin and GND pin to the live and ground of the breadboard,respectively.    </p>
-      <p>Place the LEDs on the breadboard side by side and connect a resistor to the negative side of each LED.</p>
-      <p>Connect the positive side of the LEDs to pins 9, 10 and 11.</p>
-      <img src="Pictures/3f_circuit.png" width="600px"/> 
+      <p>Place the LEDs on the breadboard side by side and connect a resistor to the negative side of each LED to the ground.</p>      
+      <p>Connect the button on the breadboard and connect a resistor to one side to the ground, the other side to live and the opposite side of the button to pin 2.</p>
+      <p>Connect the positive side of the LEDs to pins 8, 9, 10, 11, 12 and 13.</p>
+      <img src="Pictures/3g_circuit.png" width="600px"/> 
 
       <h3>Code!</h3>
-      <p>Firstly, define animationSpeed and brightness. Then in voidsetup, make the pins 9, 10 and 11 outputs.    </p>
-      <img src="Pictures/3f_setupcode.png" width="600px"/> 
-      <p>Next for the voidloop, set the animationSpeed to 3.</p>
+      <p>Firstly, define i, j, buttonState, animationSpeed and brightness. Then in voidsetup, make the pins 8, 9, 10, 11, 12 and 13 outputs.    </p>
+      <img src="Pictures/3g_setupcode.png" width="600px"/> 
+      <p>Next for the voidloop,read the buttonstate set up an if...else... condition to code what will happen if the button is pressed or not.</p>
+      <p>If the button is pressed (HIGH), set the animationSpeed to 3.</p>
       <p>To make the LEDs fades in write the command "for (Brightness = 0; Brightness <= 255; Brightness += 1)" (255 to 0 for fading out) and since fading is analog, write"
-        analogWrite(11, Brightness)". </p>
-        <p> Since I wanted to have the lights "chase" each other, I added a line to turn off pin 9 after fading out of pin 11, off 11 after 10 and 10 after 9.</p>
+        analogWrite(11, Brightness)". To have the lights "chase" each other, I added a line to turn off pin 13 after fading out of pin 11, off 12 after 10 and so on.</p>
+        <p>If the button is not pressed (LOW), set all of the LEDs on. </p>
         <p>Here is the code:</p> 
-        <iframe width="725" height="453" src="Arduino code for “chasing lights”.pdf" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-        
-      
-
-       
+        <iframe width="725" height="453" src="Twinkling lights with button.pdf" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                   
       </div>   
     </div>
 

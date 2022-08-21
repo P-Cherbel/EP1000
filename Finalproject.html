@@ -10,7 +10,9 @@
 <body>
   <div id="container">
      <div id="header">
-      <h1 >Final Project</h1>
+      <h1 >My Projects</h1>
+      <h2>Automatic disinfection door handle.</h2>
+      <p>My summative project</p>
         </div>
 
 
@@ -26,8 +28,128 @@
       </div>
 
       <div id="main">
-      <img src="Pictures/underconstruction.jpg" width="600px"/> 
-    
+        <a href= "Project.html"> Return</a>
+        
+        <h2>Automatic disinfection door handle. </h2>
+        <p >A device that sprays disinfection solution to a door handle after it has been used to prevent the pread of diseases.</p> 
+       
+        <p>Here is the design in Fusion 360.</p>       
+        <iframe src="https://ichat2243.autodesk360.com/shares/public/SH35dfcQT936092f0e430c276326ee051f9e?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+        <h2>Planning stage</h2>
+        <p>To begin, I made a rough sketch:</p>
+        <img src="Pictures/F_Sketch.jpg" width="600px"/> 
+        
+        <p>Then I made a cardboard prototype:</p>
+        <img src="Pictures/F_prototype.jpg" width="600px"/> 
+
+        <p>I then figured out the components for the circuit</p>
+        <p>Here is the tinkercad simulation:</p>       
+        <iframe width="725" height="453" src="https://www.tinkercad.com/embed/6b7UIEyebOk?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+
+        <p>Here is my Bill of Materials:</p>
+
+              
+        
+        <h2>Coding Steps:</h2>
+      <h3>Get the right components</h3> 
+      <p>To start off, in tinkercad, select:</p>
+      <ul>
+        <li>An arduino board</li>
+        <li>A breadboard</li>
+        <li>An ultrasonic proximity sensor</li>
+        <li>A servo motor</li>
+        <li> 2 LED lights </li>
+        <li> 2 220Ohm resistors </li>
+    </ul>
+         
+        <h3>Set up the connections</h3>
+      <p>Connect the breadboard to the arduino board by connecting the 5V pin and GND pin to the live and ground of the breadboard,respectively.    </p>
+      <p>Place the LEDs on the breadboard side by side and connect a resistor to the negative side of each LED.</p>
+      <p> Connect the live and ground side of the sensor and servo to the positive and negative of the breadboard respoectively.</p>
+      <p>Connect the positive side of the LEDs, trigpin, echopin and servo to pins 12, 13, 6, 5 and 9 respectively.</p>
+      <img src="Pictures/F0.1.png" width="600px"/> 
+
+      <h3>Code!</h3>
+      <p>Firstly, define LEDs, Sensor pins and servo. Then, in voidsetup make the pins all of these pins outputs.    </p>
+      <img src="Pictures/F0.2.png" width="600px"/> 
+      <p>Next for the voidloop, write the code to measure distance using the ultrasonic sensor.</p>
+      <p>Use the If...else command to make the servo sweep when there distance measured is less than 25cm. </p>
+        <p> This will result in the servo making a sweep and pressing the spray bottle if a person uses the door handle, dininfecting it.</p>
+        <p>Here is the code:</p> 
+        <iframe width="725" height="453" src="Arduino code for “Final Project”.pdf" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        
+
+
+        <h2>Design Steps:</h2>
+     
+        <h3>I started with the box design that I used for the music box design.</h3> 
+      <p>The parameters used are:</p>
+      <img src="Pictures/F1.png" width="600px"/> 
+
+      <h3>Inner wall</h3>
+      <p>I wanted to add an inner wall to separate the proximity sensor from the rest of the components. The section will also contain the battery and is where the servo will be located.</p>
+      <p>Move the front side 30mm into the box.</p>
+      <img src="Pictures/F1.1.png" width="600px"/> 
+      <p>Select the side of this new component and cut, making sure the new inner wall is hidden.</p>
+      <img src="Pictures/F1
+      .2.png" width="600px"/>          
+
+        <h3>Bottle</h3>
+      <p>Select one of the sides and draw a circle the size of the largest diameter of the bottle.</p>
+      <img src="Pictures/F2.1.png" width="600px"/> 
+      <p>Extrude</p>
+      <img src="Pictures/F2.2.png" width="600px"/> 
+      <p>Cut the hole for the solution by drawing a sketch on the new body and making a cut.</p>
+      <img src="Pictures/F2.3.png" width="600px"/>
+      <p>To make a spot for the servo, draw a rectangle and then extrude. Cut another circle as well to run wiring through.</p>
+      <img src="Pictures/F2.4.png" width="600px"/>     
+      <p>I also added a basket for the battery.</p>
+      <img src="Pictures/F2.5.png" width="600px"/>       
+  
+
+      <h3>Proximity sensor</h3>
+      <p>The proximity sesor needs two holes to detect the person.</p>
+      <p>The first step draw two circles.</p>
+      <img src="Pictures/F3.1.png" width="600px"/> 
+      <p>Cut out these circles on the front side.</p>
+      <img src="Pictures/F3.2.png" width="600px"/> 
+       
+
+      <h3>Loading bottles</h3>
+      <p>I decided to do a sliding door for replacing the bottle.</p>
+      <p>Extrude the circle and extrude(cut) in the side.</p>
+      <img src="Pictures/F4.1.png" width="600px"/> 
+      <p>Cut out these circle of the bottle on the side as well as the rectangle.</p>
+      <img src="Pictures/F4.2.png" width="600px"/> 
+      <p>Cut out another 2 circles on the side for the lights</p>
+      <img src="Pictures/F4.3.png" width="600px"/> 
+      
+      <h3>Save dxf files</h3>
+      <p> Select sides and create sketches from them. To save these are dxf files, select each sketch and right click them and click "save as dxf". All of the walls are to be laser cut.</p>
+      <h3>Save stl files</h3>
+      <p>To do this, right click the Document settings and click "save as mesh". Make sure that the file type is stl and only the bodies you do not want to print are hidden. Repeat this process to get the stl file for the bottle holder and battery holder separately.</p>
+      
+      
+      <h2>Fabrication Steps:</h2>
+      <h3>Laser Cut</h3>
+      <p>Send these dxf files to the laser cutter. </p>
+      <img src="Pictures/F_cut.png" width="600px"/> 
+
+      <h3>Print!</h3>
+      <p>After printing, the pieces should not have supports </p> 
+      <img src="Pictures/F_print1.png" width="600px"/>  
+      <img src="Pictures/F_print2.jfif" width="600px"/> 
+
+      <h3>Put it together</h3>
+      <p>Hot glue the 3D printed materials in place and assemble the box. Place the components into the container.</p>
+      <img src="Pictures/F_final" width="600px"/> 
+
+      <h2>Tip</h2>
+      <p>Write a checklist to keep track of all of the different parts. </p>
+
+
       </div>   
     </div>
 
